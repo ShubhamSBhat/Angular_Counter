@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+
+<button *ngIf="!isLoggedin" (click)="login()">Log in</button>
+<button *ngIf="isLoggedin" (click)="logout()">Log Out</button>
+
+<app-add-remainder> </app-add-remainder>
+<br />
+<app-remainder-list> </app-remainder-list>
+
+<br />
+<br />
+
+<h1>Counter</h1>
+<br />
+<h1>{{ counter1 }}</h1>
+<button (click)="counter('add')">Add</button>
+<button (click)="counter('sub')">Sub</button>
