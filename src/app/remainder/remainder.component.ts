@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-remainder',
   templateUrl: './remainder.component.html',
-  styleUrls: ['./remainder.component.css']
+  styleUrls: ['./remainder.component.css'],
 })
 export class RemainderComponent implements OnInit {
+  @Input() time: string = '';
+  @Input() activity: string = '';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
